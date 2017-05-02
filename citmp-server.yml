@@ -17,7 +17,7 @@ AutoStartResources:
     - frfuel
     - sirencontrols
     - compass_streetname
-    - lastposdb
+    - lastpostodb
     - neverwanted
     - vehcontrol
 
