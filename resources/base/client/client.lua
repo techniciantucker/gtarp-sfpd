@@ -3,7 +3,6 @@
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-
     end
 end)
 
@@ -14,6 +13,8 @@ function setDefaultServerModel()
         Citizen.Wait(0)
     end
     SetPlayerModel(PlayerId(), GetHashKey(skin))
+    --setEntityData(PlayerId(), string key, object value);
+
 end
 
 -- Spawn override
@@ -26,8 +27,8 @@ local firstspawn = true
 AddEventHandler('playerSpawned', function(spawn)
     if firstspawn then
         setDefaultServerModel()
-        exports.spawnmanager:spawnPlayer({x=131.98, y=-202.51, z=54.49})
         skinpolice()
+        --setFacialDecoration(GetPlayerPed(-1), 1)
         firstspawn = false
     end
 

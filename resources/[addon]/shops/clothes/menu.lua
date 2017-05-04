@@ -1,9 +1,16 @@
-
+--
+-- Created by IntelliJ IDEA.
+-- User: Djyss
+-- Date: 04/05/2017
+-- Time: 12:53
+-- To change this template use File | Settings | File Templates.
+--
+--
 local skinOptions = {
     opened = false,
     title = "Creez votre skin",
     currentmenu = "main",
-    lastmenu = nil,
+    lastmenu = "main",
     currentpos = nil,
     selectedbutton = 0,
     marker = { r = 0, g = 155, b = 255, a = 200, type = 1 },
@@ -20,501 +27,336 @@ local skinOptions = {
 
 local skinMenu = ModuleMenu(skinOptions)
 
-skinMenu:setMenu(
-    "main", "Personaliser",{
-    {id="head", name = "Visages", description = ""},
-    {id="hair", name = "Cheveux", description = ""},
-    {id="tshirt", name = "Tshirt", description = ""},
-    {id="jacket", name = "Vestes", description = ""},
-    {id="pants", name = "Pantalons", description = ""},
-    {id="shoes", name = "Chaussures", description = ""},
-    {id="gloves", name = "Gants", description = ""},
-    {id="accessory_1", name = "Accessoire 1", description = ""},
-    {id="accessory_2", name = "Accessoire 2", description = ""},
-    {id="accessory_3", name = "Accessoire 3", description = ""},
-    {id="accessory_4", name = "Accessoire 4", description = ""},
-    {id=nil, name = "Sauvegarder", description = ""}
-}
-)
+function skinMenu:getDrawableList(component)
+    local list = {}
+    for i = 0, GetNumberOfPedDrawableVariations(GetPlayerPed(-1), component) do
+        local cmp               = component
+        list[i]                 = {}
+        list[i].name            = "Item n°".. i
+        list[i].id              = i
+        if GetNumberOfPedTextureVariations(GetPlayerPed(-1), cmp, i) ~= nil then
+            list[i].max         = GetNumberOfPedTextureVariations(GetPlayerPed(-1), cmp, i) - 1
+        else
+            list[i].max         = 0
+        end
 
-skinMenu:setMenu(
-    "head", "Visages",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
+        list[i].onClick         = function()
+            saveItem(skinMenu.currentmenu, i,  skinMenu.menu[skinMenu.currentmenu].userSelectVariation)
+        end
+        list[i].onLeft          = function()
+            if skinMenu.menu[skinMenu.currentmenu].userSelectVariation > 0 then
+                skinMenu:setCurrentVariation("left", skinMenu.currentmenu)
+                SetPedComponentVariation(GetPlayerPed(-1), cmp, i, skinMenu.menu[skinMenu.currentmenu].userSelectVariation, 0)
+            end
+        end
+        list[i].onRight         = function()
+            if  skinMenu.menu[skinMenu.currentmenu].userSelectVariation < ( GetNumberOfPedTextureVariations(GetPlayerPed(-1), cmp, i) - 1 ) then
+                skinMenu:setCurrentVariation("right", skinMenu.currentmenu)
+                SetPedComponentVariation(GetPlayerPed(-1), cmp, i, skinMenu.menu[skinMenu.currentmenu].userSelectVariation, 0)
+            end
+        end
+        list[i].onSelected      = function()
+            SetPedComponentVariation(GetPlayerPed(-1), cmp, i, skinMenu.menu[skinMenu.currentmenu].userSelectVariation, 0)
+        end
+        list[i].onBack          = function()
+            skinMenu:toMenu(skinMenu:getLastMenu())
+        end
+    end
+    return list
+end
 
-skinMenu:setMenu(
-    "hair", "hair",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "tshirt", "tshirt",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "jacket", "Vestes",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "pants", "pantalons",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "shoes", "pantalons",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "gloves", "Gants",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "accessory_1", "Accessoire 1",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "accessory_2", "Accessoire 2",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "accessory_3", "Accessoire 3",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-skinMenu:setMenu(
-    "accessory_4", "Accessoire 4",{
-    {name="item #1",id=1},
-    {name="item #1",id=2},
-    {name="item #1",id=3},
-    {name="item #1",id=4},
-    {name="item #1",id=5},
-    {name="item #1",id=6},
-    {name="item #1",id=7},
-    {name="item #1",id=8},
-    {name="item #1",id=9},
-    {name="item #1",id=10},
-    {name="item #1",id=11},
-    {name="item #1",id=12},
-    {name="item #1",id=13},
-    {name="item #1",id=14},
-    {name="item #1",id=15},
-    {name="item #1",id=16},
-    {name="item #1",id=17},
-    {name="item #1",id=18},
-    {name="item #1",id=19},
-    {name="item #1",id=20},
-    {name="item #1",id=21}
-}
-)
-
-local currentPlayer = Player()
-
-function skinCreator()
-
+function init_menu()
     if skinMenu.opened == true then
-        local menu = skinMenu.menu[skinMenu.currentmenu]
-        skinMenu:drawTxt(skinMenu.title,1,1,skinMenu.x,skinMenu.y,1.0, 255,255,255,255)
-        skinMenu:drawMenuTitle(skinMenu.title, skinMenu.x,skinMenu.y + 0.08)
-        skinMenu:drawTxt(skinMenu.selectedbutton.."/".. skinMenu:tableLength(menu.buttons),0,0,skinMenu.x + skinMenu.width/2 - 0.0385,skinMenu.y + 0.067,0.4, 255,255,255,255)
+        skinMenu.menu["head"].buttons = skinMenu:getDrawableList(0)
+        skinMenu.menu["hair"].buttons = skinMenu:getDrawableList(2)
+        skinMenu.menu["beard"].buttons = skinMenu:getDrawableList(3)
         local y = skinMenu.y + 0.12
-        local buttoncount = skinMenu:tableLength(menu.buttons)
+        local buttoncount = #skinMenu.menu[skinMenu.currentmenu].buttons
         local selected = false
 
-        for i,button in pairs(menu.buttons) do
+        skinMenu:display()
+        skinMenu:navsButtons(buttoncount)
 
+        for i, button in pairs(skinMenu.menu[skinMenu.currentmenu].buttons) do
             if i >= skinMenu.from and i <= skinMenu.to then
-
                 if i == skinMenu.selectedbutton then
                     selected = true
                 else
                     selected = false
                 end
-
-                -- Creation du bouton
-                skinMenu:drawMenuButton(button,skinMenu.x,y,selected)
-
-                -- ajout d'un espacement pour le prochain
-                y = y + 0.04
-                submenu("head", selected, menu, button, 0)
-                submenu("hair",  selected, menu, button, 2)
-                submenu("tshirt",  selected, menu, button, 8)
-                submenu("jacket",  selected, menu, button, 11)
-                submenu("pants",  selected, menu, button, 4)
-                submenu("shoes",  selected, menu, button, 6)
-                submenu("gloves",  selected, menu, button, 3)
-                submenu("accessory_1",  selected, menu, button, 1)
-                submenu("accessory_2",  selected, menu, button, 5)
-                submenu("accessory_3",  selected, menu, button, 7)
-                submenu("accessory_4",  selected, menu, button, 9)
-
-
-
-                -- Boutons d'action (Flèches)
-
-                -- Action de selection du bouton ( ENTREE)
-                if selected and IsControlJustPressed(1,201) then
-                    if button.name == "Sauvegarder" then
-
-                        local user = {
-                            head = skinMenu.menu['head'].userSelect,
-                            hair = skinMenu.menu['hair'].userSelect,
-                            h2 = skinMenu.menu['hair'].userSelectVariation,
-
-                            tshirt = skinMenu.menu['tshirt'].userSelect,
-                            t2 = skinMenu.menu['tshirt'].userSelectVariation,
-
-                            jacket = skinMenu.menu['jacket'].userSelect,
-                            j2 = skinMenu.menu['jacket'].userSelectVariation,
-
-                            pants = skinMenu.menu['pants'].userSelect,
-                            p2 = skinMenu.menu['pants'].userSelectVariation,
-
-                            shoes = skinMenu.menu['shoes'].userSelect,
-                            s2 = skinMenu.menu['shoes'].userSelectVariation,
-
-                            gloves = skinMenu.menu['gloves'].userSelect,
-                            g2 = skinMenu.menu['gloves'].userSelectVariation,
-
-                            accessory1 = skinMenu.menu['accessory_1'].userSelect,
-                            aa = skinMenu.menu['accessory_1'].userSelectVariation,
-                            accessory2 = skinMenu.menu['accessory_2'].userSelect,
-                            ab = skinMenu.menu['accessory_2'].userSelectVariation,
-                            accessory3 = skinMenu.menu['accessory_3'].userSelect,
-                            ac = skinMenu.menu['accessory_3'].userSelectVariation,
-                            accessory4 = skinMenu.menu['accessory_4'].userSelect,
-                            ad = skinMenu.menu['accessory_4'].userSelectVariation
-                        }
-
-                        TriggerServerEvent("shopcloths:save", user)
-                        skinMenu.opened = false
+                skinMenu:drawMenuButton(button,skinMenu.x, y,selected)
+                if skinMenu.menu[skinMenu.currentmenu].rightInfo then
+                    if button.max then
+                        skinMenu:drawTxt(skinMenu.menu[skinMenu.currentmenu].userSelectVariation.."/".. button.max ,0,0,skinMenu.x + skinMenu.width/2 - 0.0385,y-0.005,0.4, 255,255,255,255)
                     end
 
-                    skinMenu:ButtonSelected(skinMenu, button)
                 end
-
-            end
-
-        end
-        if IsControlJustPressed(1,202) then
-            skinMenu:back(skinMenu)
-        end
-        if IsControlJustReleased(1,202) then
-            skinMenu.backlock = false
-        end
-        if IsControlJustPressed(1,188) then -- Up key
-            if skinMenu.selectedbutton > 1 then
-                skinMenu.selectedbutton = skinMenu.selectedbutton -1
-                if buttoncount > 10 and skinMenu.selectedbutton < skinMenu.from then
-                    skinMenu.from = skinMenu.from -1
-                    skinMenu.to = skinMenu.to - 1
+                if selected then
+                    skinMenu:onLeft(button)
+                    skinMenu:onRight(button)
+                    skinMenu:onSelected(button)
+                    skinMenu:onClick(button)
+                    skinMenu:onBack(button)
                 end
+                -- ajout d'un espacement pour le prochain
+                y = y + 0.04
             end
-        end
-        if IsControlJustPressed(1,187)then -- Down key
-            if skinMenu.selectedbutton < buttoncount then
-                skinMenu.selectedbutton = skinMenu.selectedbutton +1
-                if buttoncount > 10 and skinMenu.selectedbutton > skinMenu.to then
-                    skinMenu.to = skinMenu.to + 1
-                    skinMenu.from = skinMenu.from + 1
-                end
-            end
-        end
-
-
-    end
-
-
-end
-
-function submenu(menuId, selected, menu, button, ComponentId)
-    if skinMenu.currentmenu == menuId then
-        if selected then
-            menu.currentVariation = navigation(menu, button.id, ComponentId)
         end
     end
 end
 
-function navigation(menu, button, type)
-
-    if IsControlJustPressed(1, 175) then -- right key
-        if menu.currentVariation < GetNumberOfPedTextureVariations( GetPlayerPed(-1), type, button) - 1 then
-            menu.currentVariation = menu.currentVariation + 1
-            SetPedComponentVariation(GetPlayerPed(-1), type, button, menu.currentVariation, 0)
-        end
-    elseif IsControlJustPressed(1, 174) then -- left key
-        if menu.currentVariation > 0 then
-            menu.currentVariation = menu.currentVariation - 1
-            SetPedComponentVariation(GetPlayerPed(-1), type, button, menu.currentVariation, 0)
-        end
-    else
-        SetPedComponentVariation(GetPlayerPed(-1), type, button, menu.currentVariation, 0)
-    end
-    menu.userSelect = tonumber(button)
-    menu.userSelectVariation = tonumber(menu.currentVariation)
-    return  menu.currentVariation
-
-end
-
-function DisplayHelpText(str)
-    SetTextComponentFormat("STRING")
-    AddTextComponentString(str)
-    DisplayHelpTextFromStringLabel(0, 0, 1, -1)
+function saveItem(menuId, value, value_texture)
+    local item = {
+        menuId = menuId,
+        value = value,
+        value_texture = value_texture
+    }
+    TriggerServerEvent("shopcloths:saveItem", item)
 end
 
 local clothingStores = {
-    { ['x'] = 1864.4403076172, ['y'] = 3747.3469238281, ['z'] = 33.031894683838 },
+
     { ['x'] = 1693.2647705078, ['y'] = 4822.2797851563, ['z'] = 42.063091278076 },
     { ['x'] = 125.83338165283, ['y'] = -223.16986083984, ['z'] = 54.55782699585 },
     { ['x'] = -710.16009521484, ['y'] = -153.26420593262, ['z'] = 37.415138244629 },
     { ['x'] = -821.69067382813, ['y'] = -1073.900390625, ['z'] = 11.328099250793 },
     { ['x'] = -1192.8112792969, ['y'] = -768.24377441406, ['z'] = 17.319314956665 },
     { ['x'] = 4.2589497566223, ['y'] = 6512.8803710938, ['z'] = 31.877851486206 },
+    { ['x'] = -1097.98095703125, ['y'] = 2708.9150390625, ['z'] = 19.107873916626},
+    { ['x'] = -3170.45434570313, ['y'] = 1045.53295898438, ['z'] = 20.8632144927979},
+    { ['x'] = -162.942764282227, ['y'] = -302.322326660156, ['z'] = 39.733283996582},
+    { ['x'] = -1452.13696289063, ['y'] = -236.172698974609, ['z'] = 49.8062591552734}
 }
 
 Citizen.CreateThread(function()
     for k,v in ipairs(clothingStores)do
         local blip = AddBlipForCoord(v.x, v.y, v.z)
         SetBlipSprite(blip, 73)
+        SetBlipColour(blip, 26)
         SetBlipScale(blip, 0.8)
         SetBlipAsShortRange(blip, true)
         BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString("Customize Player")
+        AddTextComponentString("Magasins de vetements")
         EndTextCommandSetBlipName(blip)
     end
 end)
 
-
-
 Citizen.CreateThread(function()
+    skinMenu:setMenu(
+        "main","Magasins de vetements",{
+        {
+            id="tete",
+            name = "Tete",
+            description = "",
+            onClick = function()
+                skinMenu:toMenu("tete")
+            end,
+            onLeft = function() return false end,
+            onRight = function() return false end,
+            onSelected = function() return false end,
+            onBack = function() return false end
+        },
+        {
+            id="body",
+            name = "Corps",
+            description = "",
+            onClick= function()
+                skinMenu:toMenu("body")
+            end,
+            onLeft= function() return false end,
+            onRight= function() return false end,
+            onSelected= function() return false end,
+            onBack = function() return false end
+        },
+        {
+            id="pantmenu",
+            name = "Pantalons",
+            description = "",
+            onClick= function()
+                skinMenu:toMenu("pant")
+            end,
+            onLeft= function() return false end,
+            onRight= function() return false end,
+            onSelected= function() return false end,
+            onBack = function() return false end
+        },
+        {
+            id="shoeMenu",
+            name = "Chaussures",
+            description = "",
+            onClick= function()
+                skinMenu:toMenu("shoe")
+            end,
+            onLeft= function() return false end,
+            onRight= function() return false end,
+            onSelected= function() return false end,
+            onBack = function() return false end
+        },
+        {
+            id="accessory1Main",
+            name = "Accessoires",
+            description = "",
+            onClick= function()
+                skinMenu:toMenu("accessory1")
+            end,
+            onLeft= function() return false end,
+            onRight= function() return false end,
+            onSelected= function() return false end,
+            onBack = function() return false end
+        },
+        {
+            id="accessory2Main",
+            name = "Accessoires",
+            description = "",
+            onClick= function()
+                skinMenu:toMenu("accessory2")
+            end,
+            onLeft= function() return false end,
+            onRight= function() return false end,
+            onSelected= function() return false end,
+            onBack = function() return false end
+        },
+        {
+            id="exit",
+            name = "Quitter",
+            description = "",
+            onClick= function()
+                skinMenu:close()
+            end,
+            onLeft= function() return false end,
+            onRight= function() return false end,
+            onSelected= function() return false end,
+            onBack = function() return false end
+        }
+    }, false
+    )
+    skinMenu:setMenu(
+        "tete", "Tete", {
+        {
+            id="head",
+            name = "Visages",
+            description = "",
+            onClick = function()
+                skinMenu:toMenu("head")
+            end,
+            onLeft = function() return false end,
+            onRight = function() return false end,
+            onSelected = function() return false end,
+            onBack = function()
+                skinMenu:toMenu('main')
+            end
+        },
+        {
+            id="hair",
+            name = "Cheveux",
+            description = "",
+            onClick = function()
+                skinMenu:toMenu("hair")
+            end,
+            onLeft = function() return false end,
+            onRight = function() return false end,
+            onSelected = function() return false end,
+            onBack = function() skinMenu('main') end
+
+        }
+    }, false
+    )
+
+    skinMenu:setMenu(
+        "head", "Visage", {}, true
+    )
+
+    skinMenu:setMenu(
+        "hair", "Cheveux", {}, true
+    )
+    skinMenu:setMenu(
+        "body", "Corps", {
+        {
+            id="glove",
+            name = "Torse et gants",
+            description = "",
+            onClick = function()
+                skinMenu:toMenu("glove")
+            end,
+            onLeft = function() return false end,
+            onRight = function() return false end,
+            onSelected = function() return false end,
+            onBack = function()
+                skinMenu:toMenu('main')
+            end
+        },
+        {
+            id="tshirt",
+            name = "T-Shirts",
+            description = "",
+            onClick = function()
+                skinMenu:toMenu("tshirt")
+            end,
+            onLeft = function() return false end,
+            onRight = function() return false end,
+            onSelected = function() return false end,
+            onBack = function()
+                skinMenu:toMenu('main')
+            end
+        },
+        {
+            id="jacket",
+            name = "Vestes",
+            description = "",
+            onClick = function()
+                skinMenu:toMenu("jacket")
+            end,
+            onLeft = function() return false end,
+            onRight = function() return false end,
+            onSelected = function() return false end,
+            onBack = function()
+                skinMenu:toMenu('main')
+            end
+        },
+    }, false
+    )
+    skinMenu:setMenu(
+        "pant", "Pantalons", {}, true
+    )
+    skinMenu:setMenu(
+        "shoe", "Chaussures", {}, true
+    )
+    skinMenu:setMenu(
+        "accessory1", "Accessoires 1", {}, true
+    )
+    skinMenu:setMenu(
+        "accessory2", "Accessoires 2", {}, true
+    )
+    skinMenu:setMenu(
+        "accessory3", "Accessoires 3", {}, true
+    )
+    skinMenu:setMenu(
+        "accessory4", "Accessoires 4", {}, true
+    )
+
+    skinMenu:setMenu(
+        "glove", "Torse et gants", {}, true
+    )
+    skinMenu:setMenu(
+        "tshirt", "T-shirt", {}, true
+    )
+    skinMenu:setMenu(
+        "jacket", "T-shirt", {}, true
+    )
+
     while true do
         Citizen.Wait(0)
-
-        skinCreator()
-
+        init_menu()
         local pos = GetEntityCoords(GetPlayerPed(-1), false)
         for _,d in ipairs(clothingStores)do
             if Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 20.0 then
-                DrawMarker(1, d.x, d.y, d.z - 1, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 255, 255, 0,155, 0,0, 0,0)
+                DrawMarker(25, d.x, d.y, d.z - 10, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 255, 255, 0,155, 0,0, 0,0)
             end
 
             if(Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
-                DisplayHelpText("Appuyez sur la touche ~INPUT_CONTEXT~ pour ouvrir le magasin.")
+                SetTextComponentFormat("STRING")
+                AddTextComponentString("Appuyez sur la touche ~INPUT_CONTEXT~ pour ouvrir le magasin.")
+                DisplayHelpTextFromStringLabel(0, 0, 1, -1)
             end
 
             if(IsControlJustPressed(1, 51) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then

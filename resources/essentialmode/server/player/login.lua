@@ -89,7 +89,7 @@ end
 function registerUser(identifier, source)
 	if not hasAccount(identifier) then
 		-- Inserting Default User Account Stats
-		MySQL:executeQuery("INSERT INTO users (`identifier`, `name`, `permission_level`, `money`, `group`,`created_at`) VALUES ('@username', '@playername', '0', '@money', 'user', CURRENT_TIMESTAMP)",
+		MySQL:executeQuery("INSERT INTO users (`identifier`, `name`, permission_level`, `money`, `group`, `created_at`) VALUES ('@username', '@playername', '0', '@money', 'user', CURRENT_TIMESTAMP)",
 		{['@username'] = identifier, ['@playername'] = GetPlayerName(source), ['@money'] = settings.defaultSettings.startingCash})
 
 		LoadUser(identifier, source, true)

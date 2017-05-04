@@ -5,10 +5,12 @@ ModuleMenu.__index = ModuleMenu
 
 -- Meta table for ModuleMenu
 setmetatable(ModuleMenu, {
-    __call = function(self, menuOptions)
+    __call = function(self, menuOptions, currentUser)
         local self = {}
 
         self.menu = {}
+        self.historic = {}
+        self.currentuser = currentUser
         self.x = menuOptions.x
         self.y = menuOptions.y
         self.width = menuOptions.width
@@ -31,30 +33,103 @@ setmetatable(ModuleMenu, {
     end
 })
 
+function ModuleMenu:open()
+    self.opened = true
+end
 
+function ModuleMenu:close()
+    self.opened = false
+end
 
-function ModuleMenu:setMenu(menuName, title, buttons)
-    self.menu[menuName] = {title = title, name = menuName,buttons = buttons, currentVariation = 0, userSelect = 0, userSelectVariation = 0}
+function ModuleMenu:navsButtons(buttoncount)
+    if IsControlJustPressed(1,188) then -- Up key
+    if self.selectedbutton > 1 then
+        self.selectedbutton = self.selectedbutton -1
+        if buttoncount > 10 and self.selectedbutton < self.from then
+            self.from = self.from -1
+            self.to = self.to - 1
+        end
+    end
+    end
+    if IsControlJustPressed(1,187)then -- Down key
+        if self.selectedbutton < buttoncount then
+            self.selectedbutton = self.selectedbutton +1
+            if buttoncount > 10 and self.selectedbutton > self.to then
+                self.to = self.to + 1
+                self.from = self.from + 1
+            end
+        end
+    end
+end
+
+function ModuleMenu:setCurrentVariation(direction, menuName)
+    if direction == "left" then
+        self.menu[menuName].userSelectVariation = self.menu[menuName].userSelectVariation - 1
+    else
+        self.menu[menuName].userSelectVariation = self.menu[menuName].userSelectVariation + 1
+    end
+end
+
+function ModuleMenu:getLastMenu()
+    return self.lastmenu
+end
+
+function ModuleMenu:onClick( button )
+    if IsControlJustPressed(1,201) then
+        button.onClick()
+    end
+end
+
+function ModuleMenu:onLeft( button )
+    if IsControlJustPressed(1,174) then
+        button.onLeft()
+    end
+end
+
+function ModuleMenu:onRight( button )
+    if IsControlJustPressed(1,175) then
+        button.onRight()
+    end
+end
+
+function ModuleMenu:onSelected( button )
+    button.onSelected()
+end
+
+function ModuleMenu:onBack( button )
+    if IsControlJustPressed(1,202) then
+        button.onBack()
+    end
+end
+
+function ModuleMenu:toMenu( menuId )
+    self:OpenMenu(menuId)
+end
+
+function ModuleMenu:display()
+    self:drawTxt(self.menu[self.currentmenu].title,1,1,self.x,self.y,1.0, 255,255,255,255)
+    self:drawMenuTitle(self.menu[self.currentmenu].title, self.x,self.y + 0.08)
+    self:drawTxt(self.selectedbutton.."/".. #self.menu[self.currentmenu].buttons,0,0,self.x + self.width/2 - 0.0385,self.y + 0.067,0.4, 255,255,255,255)
+end
+
+function ModuleMenu:setMenu(menuName, title, buttons, rightInfo)
+    self.menu[menuName] = {
+        title = title,
+        name = menuName,
+        buttons = buttons,
+        currentVariation = 0,
+        userSelect = 0,
+        userSelectVariation = 0,
+        rightInfo = rightInfo
+    }
 end
 
 function ModuleMenu:OpenMenu(menu)
     self.lastmenu = self.currentmenu
-    if menu ~= self.baseMenu then
-        self.lastmenu = self.baseMenu
-    end
     self.from = 1
     self.to = 10
     self.selectedbutton = 0
     self.currentmenu = menu
-end
-
-function ModuleMenu:ButtonSelected(menu, button)
-    local btn = button.id
-    if btn ~= nil then
-        if self.currentmenu == menu.baseMenu then
-            menu:OpenMenu(btn)
-        end
-    end
 end
 
 function ModuleMenu:drawTxt(text,font,centre,x,y,scale,r,g,b,a)
@@ -91,6 +166,7 @@ function ModuleMenu:drawMenuButton(button,x,y,selected)
         DrawRect(x,y,menu.width,menu.height,0,0,0,150)
     end
     DrawText(x - menu.width/2 + 0.005, y - menu.height/2 + 0.0028)
+
 end
 
 function ModuleMenu:drawMenuInfo(text)
@@ -133,28 +209,4 @@ function ModuleMenu:drawMenuTitle(txt,x,y)
     AddTextComponentString(txt)
     DrawRect(x,y,menu.width,menu.height,58,83,155,150)
     DrawText(x - menu.width/2 + 0.005, y - menu.height/2 + 0.0028)
-end
-
-function ModuleMenu:tableLength(table)
-    local count = 0
-    for _ in pairs(table) do count = count + 1 end
-    return count
-end
-
-function ModuleMenu:back(menu)
-    if menu.backlock then        return
-    end
-    menu.backlock = true
-    if self.currentmenu == self.baseMenu then
-        --CloseCreator()
-    else
-        menu:OpenMenu(menu.lastmenu)
-    end
-end
-
-function ModuleMenu:open()
-    self.opened = true
-end
-function ModuleMenu:close()
-    self.opened = false
 end
