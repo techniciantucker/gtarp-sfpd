@@ -6,6 +6,18 @@ Citizen.CreateThread(function()
     end
 end)
 
+-- Display notification
+RegisterNetEvent("base:notify")
+AddEventHandler("base:notify", function(icon, type, sender, title, text)
+    Citizen.CreateThread(function()
+        Wait(1)
+        SetNotificationTextEntry("STRING");
+        AddTextComponentString(text);
+        SetNotificationMessage(icon, icon, true, type, sender, title, text);
+        DrawNotification(false, true);
+    end)
+end)
+
 function setDefaultServerModel()
     local skin = 'mp_m_freemode_01'
     RequestModel(GetHashKey(skin))

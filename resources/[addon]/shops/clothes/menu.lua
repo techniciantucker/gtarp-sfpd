@@ -6,6 +6,7 @@
 -- To change this template use File | Settings | File Templates.
 --
 --
+
 local skinOptions = {
     opened = false,
     title = "Creez votre skin",
@@ -63,46 +64,6 @@ function skinMenu:getDrawableList(component)
         end
     end
     return list
-end
-
-function init_menu()
-    if skinMenu.opened == true then
-        skinMenu.menu["head"].buttons = skinMenu:getDrawableList(0)
-        skinMenu.menu["hair"].buttons = skinMenu:getDrawableList(2)
-        skinMenu.menu["beard"].buttons = skinMenu:getDrawableList(3)
-        local y = skinMenu.y + 0.12
-        local buttoncount = #skinMenu.menu[skinMenu.currentmenu].buttons
-        local selected = false
-
-        skinMenu:display()
-        skinMenu:navsButtons(buttoncount)
-
-        for i, button in pairs(skinMenu.menu[skinMenu.currentmenu].buttons) do
-            if i >= skinMenu.from and i <= skinMenu.to then
-                if i == skinMenu.selectedbutton then
-                    selected = true
-                else
-                    selected = false
-                end
-                skinMenu:drawMenuButton(button,skinMenu.x, y,selected)
-                if skinMenu.menu[skinMenu.currentmenu].rightInfo then
-                    if button.max then
-                        skinMenu:drawTxt(skinMenu.menu[skinMenu.currentmenu].userSelectVariation.."/".. button.max ,0,0,skinMenu.x + skinMenu.width/2 - 0.0385,y-0.005,0.4, 255,255,255,255)
-                    end
-
-                end
-                if selected then
-                    skinMenu:onLeft(button)
-                    skinMenu:onRight(button)
-                    skinMenu:onSelected(button)
-                    skinMenu:onClick(button)
-                    skinMenu:onBack(button)
-                end
-                -- ajout d'un espacement pour le prochain
-                y = y + 0.04
-            end
-        end
-    end
 end
 
 function saveItem(menuId, value, value_texture)
@@ -206,7 +167,7 @@ Citizen.CreateThread(function()
         },
         {
             id="accessory2Main",
-            name = "Accessoires",
+            name = "Accessoires 2",
             description = "",
             onClick= function()
                 skinMenu:toMenu("accessory2")
@@ -346,28 +307,19 @@ Citizen.CreateThread(function()
 
     while true do
         Citizen.Wait(0)
-        init_menu()
-        local pos = GetEntityCoords(GetPlayerPed(-1), false)
-        for _,d in ipairs(clothingStores)do
-            if Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 20.0 then
-                DrawMarker(25, d.x, d.y, d.z - 10, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 255, 255, 0,155, 0,0, 0,0)
-            end
-
-            if(Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
-                SetTextComponentFormat("STRING")
-                AddTextComponentString("Appuyez sur la touche ~INPUT_CONTEXT~ pour ouvrir le magasin.")
-                DisplayHelpTextFromStringLabel(0, 0, 1, -1)
-            end
-
-            if(IsControlJustPressed(1, 51) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
-                if skinMenu.opened then
-                    skinMenu:close()
-                else
-                    skinMenu:open()
-                end
-            end
-
+        if skinMenu.opened == true then
+            skinMenu.menu["head"].buttons = skinMenu:getDrawableList(0)
+            skinMenu.menu["hair"].buttons = skinMenu:getDrawableList(2)
+            skinMenu.menu["shoe"].buttons = skinMenu:getDrawableList(6)
+            skinMenu.menu["glove"].buttons = skinMenu:getDrawableList(3)
+            skinMenu.menu["tshirt"].buttons = skinMenu:getDrawableList(8)
+            skinMenu.menu["pant"].buttons = skinMenu:getDrawableList(4)
+            skinMenu.menu["jacket"].buttons = skinMenu:getDrawableList(11)
+            skinMenu.menu["accessory1"].buttons = skinMenu:getDrawableList(9)
+            skinMenu.menu["accessory2"].buttons = skinMenu:getDrawableList(5)
+            skinMenu:display()
         end
+        skinMenu:setBlipAndMarker(clothingStores)
     end
 
 end)

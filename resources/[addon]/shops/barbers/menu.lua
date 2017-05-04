@@ -27,46 +27,6 @@ local barbersOptions = {
 
 local barbersMenu = ModuleMenu(barbersOptions)
 
-function init_menu()
-    if barbersMenu.opened == true then
-        barbersMenu.menu["head"].buttons = barbersMenu:getDrawableList(0)
-        barbersMenu.menu["hair"].buttons = barbersMenu:getDrawableList(2)
-        barbersMenu.menu["percing"].buttons = barbersMenu:getPropList(2)
-        local y = barbersMenu.y + 0.12
-        local buttoncount = #barbersMenu.menu[barbersMenu.currentmenu].buttons
-        local selected = false
-
-        barbersMenu:display()
-        barbersMenu:navsButtons(buttoncount)
-
-        for i, button in pairs(barbersMenu.menu[barbersMenu.currentmenu].buttons) do
-            if i >= barbersMenu.from and i <= barbersMenu.to then
-                if i == barbersMenu.selectedbutton then
-                    selected = true
-                else
-                    selected = false
-                end
-                barbersMenu:drawMenuButton(button,barbersMenu.x, y,selected)
-                if barbersMenu.menu[barbersMenu.currentmenu].rightInfo then
-                    if button.max then
-                        barbersMenu:drawTxt(barbersMenu.menu[barbersMenu.currentmenu].userSelectVariation.."/".. button.max ,0,0,barbersMenu.x + barbersMenu.width/2 - 0.0385,y-0.005,0.4, 255,255,255,255)
-                    end
-
-                end
-                if selected then
-                    barbersMenu:onLeft(button)
-                    barbersMenu:onRight(button)
-                    barbersMenu:onSelected(button)
-                    barbersMenu:onClick(button)
-                    barbersMenu:onBack(button)
-                end
-                -- ajout d'un espacement pour le prochain
-                y = y + 0.04
-            end
-        end
-    end
-end
-
 function barbersMenu:getDrawableList(component)
     local list = {}
     for i = 0, GetNumberOfPedDrawableVariations(GetPlayerPed(-1), component) do
@@ -104,7 +64,6 @@ function barbersMenu:getDrawableList(component)
     end
     return list
 end
-
 
 function barbersMenu:getPropList(prop)
     local list = {}
@@ -144,7 +103,6 @@ function barbersMenu:getPropList(prop)
     return list
 end
 
-
 function saveItem(menuId, value, value_texture)
     local item = {
         menuId = menuId,
@@ -165,19 +123,7 @@ local barbersStores = {
 }
 
 Citizen.CreateThread(function()
-    for k,v in ipairs(barbersStores)do
-        local blip = AddBlipForCoord(v.x, v.y, v.z)
-        SetBlipSprite(blip, 71)
-        SetBlipColour(blip, 21)
-        SetBlipScale(blip, 0.8)
-        SetBlipAsShortRange(blip, true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString("Barber shop")
-        EndTextCommandSetBlipName(blip)
-    end
-end)
 
-Citizen.CreateThread(function()
     barbersMenu:setMenu(
         "main","Barber Shop",{
         {
@@ -219,7 +165,6 @@ Citizen.CreateThread(function()
     }, false
     )
 
-
     barbersMenu:setMenu(
         "head", "Visage", {}, true
     )
@@ -232,31 +177,16 @@ Citizen.CreateThread(function()
         "percing", "Cheveux", {}, true
     )
 
-
     while true do
         Citizen.Wait(0)
-        init_menu()
-        local pos = GetEntityCoords(GetPlayerPed(-1), false)
-        for _,d in ipairs(barbersStores)do
-            if Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 20.0 then
-                DrawMarker(25, d.x, d.y, d.z - 10, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 255, 255, 0,155, 0,0, 0,0)
-            end
-
-            if(Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
-                SetTextComponentFormat("STRING")
-                AddTextComponentString("Appuyez sur la touche ~INPUT_CONTEXT~ pour ouvrir le magasin.")
-                DisplayHelpTextFromStringLabel(0, 0, 1, -1)
-            end
-
-            if(IsControlJustPressed(1, 51) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
-                if barbersMenu.opened then
-                    barbersMenu:close()
-                else
-                    barbersMenu:open()
-                end
-            end
-
+        if barbersMenu.opened == true then
+            barbersMenu.menu["head"].buttons = barbersMenu:getDrawableList(0)
+            barbersMenu.menu["hair"].buttons = barbersMenu:getDrawableList(2)
+            barbersMenu.menu["percing"].buttons = barbersMenu:getPropList(2)
+            barbersMenu:display()
         end
+        barbersMenu:setBlipAndMarker(barbersStores)
+
     end
 
 end)

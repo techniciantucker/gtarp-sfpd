@@ -106,7 +106,7 @@ function ModuleMenu:toMenu( menuId )
     self:OpenMenu(menuId)
 end
 
-function ModuleMenu:display()
+function ModuleMenu:setTexte()
     self:drawTxt(self.menu[self.currentmenu].title,1,1,self.x,self.y,1.0, 255,255,255,255)
     self:drawMenuTitle(self.menu[self.currentmenu].title, self.x,self.y + 0.08)
     self:drawTxt(self.selectedbutton.."/".. #self.menu[self.currentmenu].buttons,0,0,self.x + self.width/2 - 0.0385,self.y + 0.067,0.4, 255,255,255,255)
@@ -209,4 +209,63 @@ function ModuleMenu:drawMenuTitle(txt,x,y)
     AddTextComponentString(txt)
     DrawRect(x,y,menu.width,menu.height,58,83,155,150)
     DrawText(x - menu.width/2 + 0.005, y - menu.height/2 + 0.0028)
+end
+
+function ModuleMenu:setBlipAndMarker(stores)
+    local pos = GetEntityCoords(GetPlayerPed(-1), false)
+    for _,d in ipairs(stores)do
+        if Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 20.0 then
+            DrawMarker(25, d.x, d.y, d.z - 10, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 255, 255, 0,155, 0,0, 0,0)
+        end
+
+        if(Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
+            SetTextComponentFormat("STRING")
+            AddTextComponentString("Appuyez sur la touche ~INPUT_CONTEXT~ pour ouvrir le magasin.")
+            DisplayHelpTextFromStringLabel(0, 0, 1, -1)
+        end
+
+        if(IsControlJustPressed(1, 51) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
+            if self.opened then
+                self:close()
+            else
+                self:open()
+            end
+        end
+
+    end
+end
+
+function ModuleMenu:display()
+    local y = self.y + 0.12
+    local buttoncount = #self.menu[self.currentmenu].buttons
+    local selected = false
+
+    self:setTexte()
+    self:navsButtons(buttoncount)
+
+    for i, button in pairs(self.menu[self.currentmenu].buttons) do
+        if i >= self.from and i <= self.to then
+            if i == self.selectedbutton then
+                selected = true
+            else
+                selected = false
+            end
+            self:drawMenuButton(button,self.x, y,selected)
+            if self.menu[self.currentmenu].rightInfo then
+                if button.max then
+                    self:drawTxt(self.menu[self.currentmenu].userSelectVariation.."/".. button.max ,0,0,self.x + self.width/2 - 0.0385,y-0.005,0.4, 255,255,255,255)
+                end
+
+            end
+            if selected then
+                self:onLeft(button)
+                self:onRight(button)
+                self:onSelected(button)
+                self:onClick(button)
+                self:onBack(button)
+            end
+            -- ajout d'un espacement pour le prochain
+            y = y + 0.04
+        end
+    end
 end
