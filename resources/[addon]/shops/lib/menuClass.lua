@@ -3,41 +3,41 @@
 ModuleMenu =  {}
 ModuleMenu.__index = ModuleMenu
 
--- Meta table for ModuleMenu
-setmetatable(ModuleMenu, {
-    __call = function(self, menuOptions, currentUser)
-        local self = {}
-
-        self.menu = {}
-        self.historic = {}
-        self.currentuser = currentUser
-        self.x = menuOptions.x
-        self.y = menuOptions.y
-        self.width = menuOptions.width
-        self.height = menuOptions.height
-        self.buttons = menuOptions.buttons
-        self.from = menuOptions.from
-        self.to = menuOptions.to
-        self.scale = menuOptions.scale
-        self.font = menuOptions.font
-        self.opened = menuOptions.opened
-        self.title = menuOptions.title
-        self.currentmenu = menuOptions.currentmenu
-        self.lastmenu = menuOptions.lastmenu
-        self.currentpos = menuOptions.currentpos
-        self.selectedbutton = menuOptions.selectedbutton
-        self.marker = menuOptions.marker
-        self.baseMenu = menuOptions.currentmenu
-
-        return setmetatable(self, ModuleMenu)
-    end
-})
+function ModuleMenu:create(menuOptions)
+    -- our new object
+    local self = {}
+    -- make Account handle lookup
+    setmetatable(self,ModuleMenu)
+    -- initialize our object
+    self.menu = {}
+    self.historic = {}
+    self.currentuser = currentUser
+    self.x = menuOptions.x
+    self.y = menuOptions.y
+    self.width = menuOptions.width
+    self.height = menuOptions.height
+    self.buttons = menuOptions.buttons
+    self.from = menuOptions.from
+    self.to = menuOptions.to
+    self.scale = menuOptions.scale
+    self.font = menuOptions.font
+    self.opened = menuOptions.opened
+    self.title = menuOptions.title
+    self.currentmenu = menuOptions.currentmenu
+    self.lastmenu = menuOptions.lastmenu
+    self.currentpos = menuOptions.currentpos
+    self.selectedbutton = menuOptions.selectedbutton
+    self.marker = menuOptions.marker
+    self.baseMenu = menuOptions.currentmenu
+    return self
+end
 
 function ModuleMenu:open()
     self.opened = true
 end
 
 function ModuleMenu:close()
+    self.currentmenu = "main"
     self.opened = false
 end
 
@@ -106,12 +106,6 @@ function ModuleMenu:toMenu( menuId )
     self:OpenMenu(menuId)
 end
 
-function ModuleMenu:setTexte()
-    self:drawTxt(self.menu[self.currentmenu].title,1,1,self.x,self.y,1.0, 255,255,255,255)
-    self:drawMenuTitle(self.menu[self.currentmenu].title, self.x,self.y + 0.08)
-    self:drawTxt(self.selectedbutton.."/".. #self.menu[self.currentmenu].buttons,0,0,self.x + self.width/2 - 0.0385,self.y + 0.067,0.4, 255,255,255,255)
-end
-
 function ModuleMenu:setMenu(menuName, title, buttons, rightInfo)
     self.menu[menuName] = {
         title = title,
@@ -120,7 +114,12 @@ function ModuleMenu:setMenu(menuName, title, buttons, rightInfo)
         currentVariation = 0,
         userSelect = 0,
         userSelectVariation = 0,
-        rightInfo = rightInfo
+        rightInfo = rightInfo,
+        onBack = function()
+            if self.currentmenu ~= self.baseMenu then
+                self:toMenu(self:getLastMenu())
+            end
+        end
     }
 end
 
@@ -130,6 +129,12 @@ function ModuleMenu:OpenMenu(menu)
     self.to = 10
     self.selectedbutton = 0
     self.currentmenu = menu
+end
+
+function ModuleMenu:setTexte()
+    self:drawTxt(self.menu[self.currentmenu].title,1,1,self.x,self.y,1.0, 255,255,255,255)
+    self:drawMenuTitle(self.menu[self.currentmenu].title, self.x,self.y + 0.08)
+    self:drawTxt(self.selectedbutton.."/".. #self.menu[self.currentmenu].buttons,0,0,self.x + self.width/2 - 0.0385,self.y + 0.067,0.4, 255,255,255,255)
 end
 
 function ModuleMenu:drawTxt(text,font,centre,x,y,scale,r,g,b,a)
@@ -211,20 +216,25 @@ function ModuleMenu:drawMenuTitle(txt,x,y)
     DrawText(x - menu.width/2 + 0.005, y - menu.height/2 + 0.0028)
 end
 
-function ModuleMenu:setBlipAndMarker(stores)
+function ModuleMenu:setBlipAndMarker(stores,  markerType,  markerColorRed, markerColorGreen, markerColorBlue, markerAlpha)
+
     local pos = GetEntityCoords(GetPlayerPed(-1), false)
     for _,d in ipairs(stores)do
         if Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 20.0 then
-            DrawMarker(25, d.x, d.y, d.z - 10, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 255, 255, 0,155, 0,0, 0,0)
+            -- drawMarker(type, posX, posY, posZ, dirX, dirY, dirZ, rotX, rotY, rotZ, scaleX, scaleY, scaleZ, colorR, colorG, colorB, alpha, bobUpAndDown, faceCamera, p19, rotate, textureDict, textureName, drawOnEnts);
+           DrawMarker(markerType, d.x, d.y, d.z - 1, 0, 0, 0, 0, 0, 0, d.markerWidth, d.markerWidth, d.markerWidth, 1.5001, markerColorRed, markerColorGreen, markerColorBlue,markerAlpha, 0,0, 0,0)
         end
 
-        if(Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
+        if(Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < d.activationDist ) then
             SetTextComponentFormat("STRING")
             AddTextComponentString("Appuyez sur la touche ~INPUT_CONTEXT~ pour ouvrir le magasin.")
             DisplayHelpTextFromStringLabel(0, 0, 1, -1)
         end
+        if(IsControlJustPressed(1, 32) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) > d.activationDist ) then
+            self:close()
+        end
 
-        if(IsControlJustPressed(1, 51) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) < 1.0) then
+        if(IsControlJustPressed(1, 51) and Vdist(d.x, d.y, d.z, pos.x, pos.y, pos.z) <  d.activationDist ) then
             if self.opened then
                 self:close()
             else
@@ -235,8 +245,26 @@ function ModuleMenu:setBlipAndMarker(stores)
     end
 end
 
+function ModuleMenu:setMapMarker(stores, blipIcon, blipColor, blipName)
+    for k,v in ipairs(stores)do
+        local blip = AddBlipForCoord(v.x, v.y, v.z)
+        SetBlipSprite(blip, blipIcon)
+        SetBlipColour(blip, blipColor)
+        SetBlipScale(blip, 0.8)
+        SetBlipAsShortRange(blip, true)
+        BeginTextCommandSetBlipName("STRING")
+        AddTextComponentString(blipName)
+        EndTextCommandSetBlipName(blip)
+    end
+end
+
 function ModuleMenu:display()
     local y = self.y + 0.12
+
+    if type(self.menu[self.currentmenu].buttons) == "function" then
+        self.menu[self.currentmenu].buttons = self.menu[self.currentmenu].buttons()
+    end
+
     local buttoncount = #self.menu[self.currentmenu].buttons
     local selected = false
 
@@ -252,12 +280,12 @@ function ModuleMenu:display()
             end
             self:drawMenuButton(button,self.x, y,selected)
             if self.menu[self.currentmenu].rightInfo then
-                if button.max then
-                    self:drawTxt(self.menu[self.currentmenu].userSelectVariation.."/".. button.max ,0,0,self.x + self.width/2 - 0.0385,y-0.005,0.4, 255,255,255,255)
+                if button.max ~= false then
+                    -- self:drawTxt(self.menu[self.currentmenu].userSelectVariation.."/".. button.max ,0,0,self.x + self.width/2 - 0.0385,y-0.005,0.4, 255,255,255,255)
                 end
-
             end
             if selected then
+                self.menu[self.currentmenu].userSelect = button.id
                 self:onLeft(button)
                 self:onRight(button)
                 self:onSelected(button)
@@ -269,3 +297,4 @@ function ModuleMenu:display()
         end
     end
 end
+

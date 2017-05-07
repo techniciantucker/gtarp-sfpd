@@ -4,6 +4,7 @@ PreParseResources:
     - mapmanager
 
 AutoStartResources:
+    - assets
     - chat
     - spawnmanager
     - fivem-map-skater
@@ -17,9 +18,11 @@ AutoStartResources:
     - frfuel
     - sirencontrols
     - compass_streetname
-    - lastpostodb
     - neverwanted
     - vehcontrol
+    - vehshop
+    - Garages
+    - banking
 
 # do change
 RconPassword: lovely

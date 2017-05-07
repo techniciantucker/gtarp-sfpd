@@ -1,4 +1,5 @@
 
+
 RegisterServerEvent("base:debug")
 AddEventHandler("base:debug", function(_)
     print(_)
