@@ -1,64 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/client.lua" line="44" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a26634f1-38d9-4685-b6aa-d8760e99e9e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/bank-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/cursor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/pricedown.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/stream/coloredhud/hud.ytd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/stream/coloredhud/minimap.ytd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/stream/coloredhud/mp_big_message_freemode.ytd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/http-files/Garages.rpf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/http-files/assets.rpf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/http-files/assets.sfl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/http-files/banking.rpf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cache/http-files/vehshop.rpf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/__resource.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/client.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/server.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/sql.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/__resource.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/client.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/debounce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/html/ui.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/banking/server.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/shops/ammunations/menu.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/vehshop/__resource.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/vehshop/vehshop.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/vehshop/vehshop_s.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/__resource.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/mapzoomdata.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/base/client.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/base/knockout/knockout.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/base/spawn/process.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cache/http-files/lastpostodb.rpf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/lastpostodb/__resource.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/lastpostodb/client.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/lastpostodb/lastpos.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/lastpostodb/server.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/shops/barbers/process.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/shops/lib/playerClass.lua" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/base/client/client.lua" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/GUI.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/__resource.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/anims.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/client.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/server.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/GUI.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/http-files/Garages.rpf" afterPath="$PROJECT_DIR$/cache/http-files/Garages.rpf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/http-files/base.rpf" afterPath="$PROJECT_DIR$/cache/http-files/base.rpf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/http-files/shops.rpf" afterPath="$PROJECT_DIR$/cache/http-files/shops.rpf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/citmp-server.yml" afterPath="$PROJECT_DIR$/citmp-server.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/__resource.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/__resource.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database-dump.sql" afterPath="$PROJECT_DIR$/database-dump.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/Garages/client.lua" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/client.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/base/__resource.lua" afterPath="$PROJECT_DIR$/resources/base/__resource.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/essentialmode/server/player/login.lua" afterPath="$PROJECT_DIR$/resources/essentialmode/server/player/login.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database-dump-v0.1.sql" afterPath="$PROJECT_DIR$/database-dump.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/[addon]/shops/clothes/process.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/process.lua" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/base/server/server.lua" afterPath="$PROJECT_DIR$/resources/base/server.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/process.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/process.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/base/knockout/knockout.lua" afterPath="$PROJECT_DIR$/resources/base/knockout/knockout.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" afterPath="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" />
     </list>
     <ignored path="cfx-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,15 +46,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spawnManager.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/base/spawn/spawnManager.lua">
+      <file leaf-file-name="GUI.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/GUI.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
               <folding>
-                <element signature="e#1500#1625#1" expanded="false" />
-                <element signature="e#1642#1778#1" expanded="false" />
-                <element signature="n#setBlip#0" expanded="false" />
+                <element signature="n#Menu.addButton#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/client.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="461" column="44" selection-start-line="461" selection-start-column="44" selection-end-line="461" selection-end-column="44" />
+              <folding>
+                <element signature="e#170#390#1" expanded="false" />
+                <element signature="n#PersonnalMenu#0" expanded="false" />
+                <element signature="e#1209#1323#0" expanded="false" />
+                <element signature="e#1347#1459#1" expanded="false" />
+                <element signature="e#1641#1719#0" expanded="false" />
+                <element signature="e#1892#1954#0" expanded="false" />
+                <element signature="n#phoneMenu#0" expanded="false" />
+                <element signature="n#repertoryMenu#0" expanded="false" />
+                <element signature="n#callPolice#0" expanded="false" />
+                <element signature="n#writeMsg#0" expanded="false" />
+                <element signature="e#3019#3088#1" expanded="false" />
+                <element signature="n#messageryMenu#0" expanded="false" />
+                <element signature="n#readOldMsg#0" expanded="false" />
+                <element signature="n#takePhoto#0" expanded="false" />
+                <element signature="n#animsMenu#0" expanded="false" />
+                <element signature="n#animsSalute#0" expanded="false" />
+                <element signature="n#animsHumor#0" expanded="false" />
+                <element signature="n#animsOthers#0" expanded="false" />
+                <element signature="n#animsAction#0" expanded="false" />
+                <element signature="n#animsActionScenario#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="anims.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/anims.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <marker date="1494417096617" expanded="true" signature="160:256" placeholder="..." />
+                <marker date="1494417096617" expanded="true" signature="174:254" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="citmp-server.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/citmp-server.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53922653">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/server.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+              <folding>
+                <element signature="e#1803#2184#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,118 +128,32 @@
         <entry file="file://$PROJECT_DIR$/resources/base/spawn/process.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+              <caret line="39" column="8" selection-start-line="37" selection-start-column="3" selection-end-line="39" selection-end-column="8" />
               <folding>
                 <element signature="n#getLastPos#0" expanded="false" />
-                <element signature="n#getSkin#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="knockout.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/base/knockout/knockout.lua">
+      <file leaf-file-name="client.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/base/client.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
-              <folding>
-                <element signature="e#174#523#1" expanded="false" />
-                <element signature="n#skinMenu:getDrawableList#0" expanded="false" />
-                <element signature="n#skinMenu:getPropList#0" expanded="false" />
-                <element signature="e#5960#6301#1" expanded="false" />
-                <element signature="e#6303#6641#1" expanded="false" />
-                <element signature="e#6643#6989#1" expanded="false" />
-                <element signature="e#6991#7338#1" expanded="false" />
-                <element signature="e#7340#7700#1" expanded="false" />
-                <element signature="e#7702#8064#1" expanded="false" />
-                <element signature="e#8066#8399#1" expanded="false" />
-                <element signature="e#8445#9221#0" expanded="false" />
-                <element signature="e#9456#10615#0" expanded="false" />
-                <element signature="e#9462#9842#1" expanded="false" />
-                <element signature="e#9848#10228#1" expanded="false" />
-                <element signature="e#10234#10612#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="154" column="36" selection-start-line="154" selection-start-column="36" selection-end-line="154" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.lua" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/ammunations/menu.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26519337">
-              <caret line="155" column="15" selection-start-line="155" selection-start-column="15" selection-end-line="155" selection-end-column="15" />
-              <folding>
-                <element signature="e#759#2471#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spawnmanager.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/[system]/spawnmanager/spawnmanager.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.965517">
-              <caret line="165" column="41" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="41" />
-              <folding>
-                <element signature="e#239#2261#0" expanded="false" />
-                <element signature="n#addSpawnPoint#0" expanded="false" />
-                <element signature="n#loadScene#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deathmessages.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/[gameplay]/obituary-deaths/deathmessages.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="68" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cfx-server-2/resources/essentialmode/client/main.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ko_client.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/knockout/ko_client.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="11" selection-start-line="18" selection-start-column="8" selection-end-line="35" selection-end-column="11" />
+              <caret line="21" column="33" selection-start-line="15" selection-start-column="4" selection-end-line="21" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Lua Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -222,23 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/[addon]/lastpostodb/config.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/loadingscreen/index.html" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/resources/[addon]/lastpostodb/__resource.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/a.json" />
-        <option value="$PROJECT_DIR$/../cfx-server-2/citmp-server.yml" />
-        <option value="$PROJECT_DIR$/resources/[addon]/keysControl.lua" />
-        <option value="$PROJECT_DIR$/resources/clothes_shop/ui_fn.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/clothes/aa.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/clothes/client.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu_old.lua" />
-        <option value="$PROJECT_DIR$/resources/base/server/server.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/ammunations/ammunations.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/test/__resource.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/police/__resource.lua" />
         <option value="$PROJECT_DIR$/resources/[addon]/shops2/classConstructor.lua" />
         <option value="$PROJECT_DIR$/resources/[addon]/shops2/__resource.lua" />
         <option value="$PROJECT_DIR$/resources/[addon]/shops2/clothes.lua" />
@@ -250,7 +177,6 @@
         <option value="$PROJECT_DIR$/resources/base/spawnManager/process.lua" />
         <option value="$PROJECT_DIR$/resources/base/spawnManager/spawnManager.lua" />
         <option value="$PROJECT_DIR$/resources/base/server.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua" />
         <option value="$PROJECT_DIR$/resources/[addon]/shops/clothes/process.lua" />
         <option value="$PROJECT_DIR$/resources/[addon]/shops/__resource.lua" />
         <option value="$PROJECT_DIR$/resources/base/spawn/process.lua" />
@@ -264,15 +190,33 @@
         <option value="$PROJECT_DIR$/resources/knockout/ko_client.lua" />
         <option value="$PROJECT_DIR$/resources/base/__resource.lua" />
         <option value="$PROJECT_DIR$/resources/essentialmode/server/main.lua" />
-        <option value="$PROJECT_DIR$/resources/essentialmode/client/main.lua" />
         <option value="$PROJECT_DIR$/resources/essentialmode/config.lua" />
-        <option value="$PROJECT_DIR$/resources/essentialmode/server/player/login.lua" />
-        <option value="$PROJECT_DIR$/citmp-server.yml" />
-        <option value="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" />
-        <option value="$PROJECT_DIR$/resources/base/knockout/knockout.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua" />
-        <option value="$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua" />
         <option value="$PROJECT_DIR$/resources/[addon]/shops/ammunations/menu.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua" />
+        <option value="$PROJECT_DIR$/resources/essentialmode/client/main.lua" />
+        <option value="$PROJECT_DIR$/resources/essentialmode/server/classes/player.lua" />
+        <option value="$PROJECT_DIR$/resources/essentialmode/server/player/login.lua" />
+        <option value="$PROJECT_DIR$/resources/base/knockout/knockout.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/police/__resource.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/vdk_inventory/__resource.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/vehshop/vehshop.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/vdk_inventory/GUI.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/vdk_inventory/vdkinv.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/personnal_menu/inventory.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/personnal_menu/GUI.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/personnal_menu/__resource.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua" />
+        <option value="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/shops/process.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/Garages/client.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/personnal_menu/server.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/example/__resource.lua" />
+        <option value="$PROJECT_DIR$/citmp-server.yml" />
+        <option value="$PROJECT_DIR$/resources/[addon]/personnal_menu/anims.lua" />
+        <option value="$PROJECT_DIR$/resources/[addon]/personnal_menu/client.lua" />
+        <option value="$PROJECT_DIR$/database-dump.sql" />
       </list>
     </option>
   </component>
@@ -286,7 +230,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
@@ -319,6 +263,7 @@
       <pane id="Scope">
         <subPane subId="Project Files" />
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,89 +282,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="[addon]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="[addon]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shops" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cfx-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="[addon]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shops" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ammunations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -436,9 +300,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]\example" />
+      <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]\personnal_menu" />
+      <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]\vdk_inventory" />
       <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]\test" />
       <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]\shops" />
-      <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]\base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\gta-FiveM-server\cfx-server\resources\[addon]" />
@@ -987,16 +853,21 @@
       <workItem from="1493981212181" duration="20103000" />
       <workItem from="1494016533561" duration="41123000" />
       <workItem from="1494108712359" duration="10185000" />
-      <workItem from="1494144817701" duration="33463000" />
+      <workItem from="1494144817701" duration="33538000" />
+      <workItem from="1494200692728" duration="10718000" />
+      <workItem from="1494255936381" duration="6554000" />
+      <workItem from="1494284165946" duration="27899000" />
+      <workItem from="1494339212058" duration="15081000" />
+      <workItem from="1494414822700" duration="7704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304631000" />
+    <option name="totallyTimeSpent" value="372662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1006,24 +877,51 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22921109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22921109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22921109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1045,241 +943,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/[system]/baseevents/server.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[gameplay]/irc/irc.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[gameplay]/irc/irc_run.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[test]/betaguns/client.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[test]/gameInit/init.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[test]/keks/loadscreen.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[test]/keks/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="27.034483">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="256" column="39" selection-start-line="249" selection-start-column="8" selection-end-line="256" selection-end-column="39" />
-          <folding>
-            <element signature="n#ModuleMenu:open#0" expanded="false" />
-            <element signature="n#ModuleMenu:close#0" expanded="false" />
-            <element signature="n#ModuleMenu:navsButtons#0" expanded="false" />
-            <element signature="n#ModuleMenu:onClick#0" expanded="false" />
-            <element signature="n#ModuleMenu:onLeft#0" expanded="false" />
-            <element signature="n#ModuleMenu:onRight#0" expanded="false" />
-            <element signature="n#ModuleMenu:onSelected#0" expanded="false" />
-            <element signature="n#ModuleMenu:onBack#0" expanded="false" />
-            <element signature="n#ModuleMenu:toMenu#0" expanded="false" />
-            <element signature="e#3089#3229#0" expanded="false" />
-            <element signature="n#ModuleMenu:OpenMenu#0" expanded="false" />
-            <element signature="n#ModuleMenu:setTexte#0" expanded="false" />
-            <element signature="n#ModuleMenu:drawTxt#0" expanded="false" />
-            <element signature="n#ModuleMenu:drawMenuButton#0" expanded="false" />
-            <element signature="n#ModuleMenu:drawMenuInfo#0" expanded="false" />
-            <element signature="n#ModuleMenu:drawMenuRight#0" expanded="false" />
-            <element signature="n#ModuleMenu:drawMenuTitle#0" expanded="false" />
-            <element signature="n#ModuleMenu:setBlipAndMarker#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/base/server.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/base/client.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding>
-            <element signature="e#47#1127#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/sql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5172415">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/process.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="77" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="77" />
-          <folding>
-            <element signature="e#2887#6242#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/__resource.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vehshop/__resource.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/server.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="77" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/__resource.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/banking/__resource.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vehshop/vehshop_s.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="77" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/banking/server.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vehshop/vehshop.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/base/__resource.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15469614">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[managers]/mapmanager/mapmanager_client.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[gameplay]/channelfeed/client/channelfeed.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[system]/baseevents/deathevents.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cfx-server-2/citmp-server.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/classes/groups.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/util.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../cfx-server-2/resources/essentialmode/server/player/login.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.22321428">
           <caret line="68" column="0" selection-start-line="9" selection-start-column="78" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,15 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/essentialmode/client/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="1" column="35" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,61 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="89" selection-start-line="85" selection-start-column="8" selection-end-line="86" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/citmp-server.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/player/login.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.137932">
-          <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.344828">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/classes/player.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7070358">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/client.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="n#ListeVehicule#0" expanded="false" />
-            <element signature="n#OptionVehicle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-          <folding>
-            <element signature="n#Menu.addButton#0" expanded="false" />
-            <element signature="n#Menu.updateSelection#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1381,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,31 +989,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="68" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/base/spawn/spawnManager.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-          <folding>
-            <element signature="e#1500#1625#1" expanded="false" />
-            <element signature="e#1642#1778#1" expanded="false" />
-            <element signature="n#setBlip#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/[system]/spawnmanager/spawnmanager.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.965517">
+        <state vertical-scroll-proportion="0.0">
           <caret line="165" column="41" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="41" />
-          <folding>
-            <element signature="e#239#2261#0" expanded="false" />
-            <element signature="n#addSpawnPoint#0" expanded="false" />
-            <element signature="n#loadScene#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1421,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,68 +1010,331 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="11" selection-start-line="18" selection-start-column="8" selection-end-line="35" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/base/spawn/process.lua">
+    <entry file="file://$PROJECT_DIR$/resources/essentialmode/client/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.068966">
+          <caret line="64" column="24" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/util.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-          <folding>
-            <element signature="n#getLastPos#0" expanded="false" />
-            <element signature="n#getSkin#0" expanded="false" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem/fivem_client.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-map-hipster/map.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-map-skater/map.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-map-skater/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-map-hipster/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-awesome1501/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-awesome1501/srv.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fivem-awesome1501/omg.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/classes/player.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/essentialmode/server/player/login.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/base/knockout/knockout.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="101" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/dump.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.310345">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/vehshop/vehshop.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.068966">
+          <caret line="243" column="30" selection-start-line="243" selection-start-column="27" selection-end-line="243" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="290" column="137" selection-start-line="290" selection-start-column="129" selection-end-line="290" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/GUI.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-46.068966">
+          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/ammunations/menu.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="7" selection-start-line="140" selection-start-column="4" selection-end-line="146" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/vdkinv.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/server.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/server.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/__resource.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/base/server.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
-          <folding>
-            <element signature="e#174#523#1" expanded="false" />
-            <element signature="n#skinMenu:getDrawableList#0" expanded="false" />
-            <element signature="n#skinMenu:getPropList#0" expanded="false" />
-            <element signature="e#5960#6301#1" expanded="false" />
-            <element signature="e#6303#6641#1" expanded="false" />
-            <element signature="e#6643#6989#1" expanded="false" />
-            <element signature="e#6991#7338#1" expanded="false" />
-            <element signature="e#7340#7700#1" expanded="false" />
-            <element signature="e#7702#8064#1" expanded="false" />
-            <element signature="e#8066#8399#1" expanded="false" />
-            <element signature="e#8445#9221#0" expanded="false" />
-            <element signature="e#9456#10615#0" expanded="false" />
-            <element signature="e#9462#9842#1" expanded="false" />
-            <element signature="e#9848#10228#1" expanded="false" />
-            <element signature="e#10234#10612#1" expanded="false" />
-          </folding>
+          <caret line="296" column="33" selection-start-line="296" selection-start-column="33" selection-end-line="296" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/base/spawn/spawnManager.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="19" selection-start-line="160" selection-start-column="19" selection-end-line="160" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/process.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6629834">
+          <caret line="141" column="28" selection-start-line="141" selection-start-column="28" selection-end-line="141" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/client.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57016575">
+          <caret line="71" column="34" selection-start-line="69" selection-start-column="4" selection-end-line="71" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/base/client.lua">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="154" column="36" selection-start-line="154" selection-start-column="36" selection-end-line="154" selection-end-column="36" />
+          <caret line="21" column="33" selection-start-line="15" selection-start-column="4" selection-end-line="21" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/shops/ammunations/menu.lua">
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/GUI.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26519337">
-          <caret line="155" column="15" selection-start-line="155" selection-start-column="15" selection-end-line="155" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
           <folding>
-            <element signature="e#759#2471#1" expanded="false" />
+            <element signature="n#Menu.addButton#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/base/spawn/process.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="8" selection-start-line="37" selection-start-column="3" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <element signature="n#getLastPos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/server.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+          <folding>
+            <element signature="e#1803#2184#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/anims.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1494417096617" expanded="true" signature="160:256" placeholder="..." />
+            <marker date="1494417096617" expanded="true" signature="174:254" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database-dump.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0958904">
+          <caret line="126" column="43" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/[addon]/personnal_menu/client.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="461" column="44" selection-start-line="461" selection-start-column="44" selection-end-line="461" selection-end-column="44" />
+          <folding>
+            <element signature="e#170#390#1" expanded="false" />
+            <element signature="n#PersonnalMenu#0" expanded="false" />
+            <element signature="e#1209#1323#0" expanded="false" />
+            <element signature="e#1347#1459#1" expanded="false" />
+            <element signature="e#1641#1719#0" expanded="false" />
+            <element signature="e#1892#1954#0" expanded="false" />
+            <element signature="n#phoneMenu#0" expanded="false" />
+            <element signature="n#repertoryMenu#0" expanded="false" />
+            <element signature="n#callPolice#0" expanded="false" />
+            <element signature="n#writeMsg#0" expanded="false" />
+            <element signature="e#3019#3088#1" expanded="false" />
+            <element signature="n#messageryMenu#0" expanded="false" />
+            <element signature="n#readOldMsg#0" expanded="false" />
+            <element signature="n#takePhoto#0" expanded="false" />
+            <element signature="n#animsMenu#0" expanded="false" />
+            <element signature="n#animsSalute#0" expanded="false" />
+            <element signature="n#animsHumor#0" expanded="false" />
+            <element signature="n#animsOthers#0" expanded="false" />
+            <element signature="n#animsAction#0" expanded="false" />
+            <element signature="n#animsActionScenario#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/citmp-server.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53922653">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -78,9 +78,9 @@ function Menu.updateSelection()
 	end
 end
 
-function Menu.renderGUI()
+function Menu.renderGUI(options)
 	if not Menu.hidden then
-		Menu.renderButtons()
+		Menu.renderButtons(options)
 		Menu.updateSelection()
 	end
 end
@@ -89,18 +89,7 @@ function Menu.renderBox(xMin,xMax,yMin,yMax,color1,color2,color3,color4)
 	DrawRect(xMin, yMin,xMax, yMax, color1, color2, color3, color4);
 end
 
-function Menu.renderButtons()
-
-	local menu = {
-		title = "Creez votre skin",
-		x = 0.1,
-		y = 0.2,
-		width = 0.2,
-		height = 0.04,
-		scale = 0.4,
-		font = 0,
-	}
-
+function Menu:setTitle(options)
 	SetTextFont(1)
 	SetTextProportional(0)
 	SetTextScale(1.0, 1.0)
@@ -111,21 +100,23 @@ function Menu.renderButtons()
 	SetTextOutline()
 	SetTextCentre(1)
 	SetTextEntry("STRING")
-	AddTextComponentString("Garage")
-	DrawText(menu.x, menu.y)
+	AddTextComponentString(options.menu_title)
+	DrawText(options.x, options.y)
+end
 
+function Menu:setSubTitle(options)
 	SetTextFont(2)
 	SetTextProportional(0)
-	SetTextScale(0.5, 0.5)
+	SetTextScale(options.scale +0.1, options.scale +0.1)
 	SetTextColour(255, 255, 255, 255)
 	SetTextEntry("STRING")
-	AddTextComponentString("Votre garage")
-	DrawRect(menu.x,(menu.y +0.08),menu.width,menu.height,58,83,155,150)
-	DrawText(menu.x - menu.width/2 + 0.005, (menu.y+ 0.08) - menu.height/2 + 0.0028)
+	AddTextComponentString(options.menu_subtitle)
+	DrawRect(options.x,(options.y +0.08),options.width,options.height,options.color_r,options.color_g,options.color_b,150)
+	DrawText(options.x - options.width/2 + 0.005, (options.y+ 0.08) - options.height/2 + 0.0028)
 
 	SetTextFont(0)
 	SetTextProportional(0)
-	SetTextScale(0.4, 0.4)
+	SetTextScale(options.scale, options.scale)
 	SetTextColour(255, 255, 255, 255)
 	SetTextDropShadow(0, 0, 0, 0,255)
 	SetTextEdge(1, 0, 0, 0, 255)
@@ -133,15 +124,17 @@ function Menu.renderButtons()
 	SetTextOutline()
 	SetTextCentre(0)
 	SetTextEntry("STRING")
-	AddTextComponentString("0/5")
-	DrawText((menu.x + menu.width/2 - 0.0385) , menu.y + 0.067)
+	AddTextComponentString(options.rightText)
+	DrawText((options.x + options.width/2 - 0.0385) , options.y + 0.067)
+end
 
-	local y = 0.2 + 0.12
+function Menu:drawButtons(options)
+	local y = options.y + 0.12
 
 	for id, settings in pairs(Menu.GUI) do
 		SetTextFont(0)
 		SetTextProportional(0)
-		SetTextScale(0.4, 0.4)
+		SetTextScale(options.scale, options.scale)
 		if(settings["active"]) then
 			SetTextColour(0, 0, 0, 255)
 		else
@@ -151,13 +144,21 @@ function Menu.renderButtons()
 		SetTextEntry("STRING")
 		AddTextComponentString(settings["name"])
 		if(settings["active"]) then
-			DrawRect(0.1,y,0.2,0.04,255,255,255,255)
+			DrawRect(options.x,y,options.width,options.height,255,255,255,255)
 		else
-			DrawRect(0.1,y,0.2,0.04,0,0,0,150)
+			DrawRect(options.x,y,options.width,options.height,0,0,0,150)
 		end
-		DrawText(0.1 - 0.2/2 + 0.005, y - 0.04/2 + 0.0028)
+		DrawText(options.x - options.width/2 + 0.005, y - 0.04/2 + 0.0028)
 		y = y + 0.04
 	end
+end
+
+function Menu.renderButtons(options)
+
+	Menu:setTitle(options)
+	Menu:setSubTitle(options)
+	Menu:drawButtons(options)
+
 end
 
 --------------------------------------------------------------------------------------------------------------------

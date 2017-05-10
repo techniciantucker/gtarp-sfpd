@@ -128,7 +128,7 @@ barbersMenu:setMenu( "main","Barber Shop",{
         name = "Cheveux",
         description = "",
         onClick = function()
-            barbersMenu:toMenu("main")
+            barbersMenu:toMenu("hair")
         end,
         onLeft = function() return false end,
         onRight = function() return false end,
@@ -140,29 +140,16 @@ barbersMenu:setMenu( "main","Barber Shop",{
         name = "Percings",
         description = "",
         onClick = function()
-            barbersMenu:toMenu("main")
+            barbersMenu:toMenu("percing")
         end,
         onLeft = function() return false end,
         onRight = function() return false end,
         onSelected = function() return false end,
         onBack = function() return false end
-    },
-    {
-        id="helmet",
-        name = "a",
-        description = "",
-        onClick = function()
-            barbersMenu:toMenu("main")
-        end,
-        onLeft = function() return false end,
-        onRight = function() return false end,
-        onSelected = function() return false end,
-        onBack = function() return false end
-    },
+    }
 }, false )
 barbersMenu:setMenu( "hair", "Cheveux", function() return barbersMenu:getDrawableList(2) end , true )
 barbersMenu:setMenu( "percing", "Piercing", function() return barbersMenu:getPropList(2) end , true )
-barbersMenu:setMenu( "helmet", "Chapeaux", function() return barbersMenu:getPropList(0) end , true )
 
 Citizen.CreateThread(function()
     barbersMenu:setMapMarker(barbersStores, 71, 21, "Coiffeurs")

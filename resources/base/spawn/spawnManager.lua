@@ -65,10 +65,8 @@ AddEventHandler('onClientMapStart', function()
     exports.spawnmanager:setAutoSpawn(true)
     exports.spawnmanager:forceRespawn()
     exports.spawnmanager:setAutoSpawnCallback(function()
-        if(true)then
-            local model = "mp_m_freemode_01"
-            exports.spawnmanager:spawnPlayer({x = hospital.x, y = hospital.y, z = hospital.z, model = GetHashKey(model)})
-        end
+        local model = "mp_m_freemode_01"
+        exports.spawnmanager:spawnPlayer({x = hospital.x, y = hospital.y, z = hospital.z, model = GetHashKey(model)})
     end)
     Citizen.CreateThread(function()
         while true do
@@ -80,7 +78,7 @@ end)
 -- Event trigger par le jeu à chaque spawn le premier de la session aura firstspawn a 0
 local firstspawn = 0
 AddEventHandler("playerSpawned", function()
-    exports.spawnmanager:setAutoSpawn(false)
+    --exports.spawnmanager:setAutoSpawn(false)
     SetPedDefaultComponentVariation(GetPlayerPed(-1))
     if firstspawn == 0 then
         TriggerServerEvent("bs:firstSpawnPlayer")
@@ -160,12 +158,21 @@ function setPlayerSkin(skin)
         SetPedComponentVariation(playerPed, 4, skin.pant, skin.pant_txt, 0)
         -- set shoes
         SetPedComponentVariation(playerPed, 6, skin.shoe, skin.shoe_txt, 0)
-        -- set_glasses
-        SetPedPropIndex(playerPed, 1, skin.glasses,skin.glasses_txt, 0)
-        -- set_percing
-        SetPedPropIndex(playerPed, 2, skin.percing,skin.percing_txt, 0)
-        -- set_percing
-        SetPedPropIndex(playerPed, 0, skin.helmet,skin.helmet_txt, 0)
+        -- set mask
+        SetPedComponentVariation(playerPed, 1, skin.mask, skin.mask_txt, 0)
+
+        if skin.glasses then
+            -- set_glasses
+            SetPedPropIndex(playerPed, 1, skin.glasses,skin.glasses_txt, 0)
+        end
+        if skin.percing then
+            -- set_percing
+            SetPedPropIndex(playerPed, 2, skin.percing,skin.percing_txt, 0)
+        end
+        if skin.helmet then
+            -- set_helmet
+            SetPedPropIndex(playerPed, 0, skin.helmet,skin.helmet_txt, 0)
+        end
         -- set accessory1
         SetPedComponentVariation(playerPed, 9, skin.accessory1, skin.accessory1_txt, 0)
         -- set accessory2

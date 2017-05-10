@@ -254,6 +254,13 @@ function ModuleMenu:setMapMarker(stores, blipIcon, blipColor, blipName)
         SetBlipAsShortRange(blip, true)
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString(blipName)
+        EndTextCommandSetBlipName(blip)local blip = AddBlipForCoord(v.x, v.y, v.z)
+        SetBlipSprite(blip, blipIcon)
+        SetBlipColour(blip, blipColor)
+        SetBlipScale(blip, 0.8)
+        SetBlipAsShortRange(blip, true)
+        BeginTextCommandSetBlipName("STRING")
+        AddTextComponentString(blipName)
         EndTextCommandSetBlipName(blip)
     end
 end

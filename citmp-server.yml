@@ -23,6 +23,7 @@ AutoStartResources:
     - vehshop
     - Garages
     - banking
+    - personnal_menu
 
 # do change
 RconPassword: lovely

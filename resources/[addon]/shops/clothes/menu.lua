@@ -231,6 +231,20 @@ skinMenu:setMenu( "tete", "Tete", {
         onBack = function()
             skinMenu:toMenu('main')
         end
+    },
+    {
+        id="mask",
+        name = "Masque",
+        description = "",
+        onClick = function()
+            skinMenu:toMenu("mask")
+        end,
+        onLeft = function() return false end,
+        onRight = function() return false end,
+        onSelected = function() return false end,
+        onBack = function()
+            skinMenu:toMenu('main')
+        end
     }
 }, false )
 
@@ -280,6 +294,7 @@ skinMenu:setMenu( "body", "Corps", {
         end
     },
 }, false )
+skinMenu:setMenu( "mask", "Masque", function() return skinMenu:getDrawableList(1) end, true )
 skinMenu:setMenu( "pant", "Pantalons", function() return skinMenu:getDrawableList(4) end, true )
 skinMenu:setMenu( "shoe", "Chaussures", function() return skinMenu:getDrawableList(6) end, true )
 skinMenu:setMenu( "accessory1", "Accessoires 1", function() return skinMenu:getDrawableList(9) end, true )

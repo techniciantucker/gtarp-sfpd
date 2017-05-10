@@ -26,7 +26,7 @@ function MenuGarage()
     ClearMenu()
     Menu.addButton("Rentrer le véhicule","RentrerVehicule",nil)
     Menu.addButton("Sortir un véhicule","ListeVehicule",nil)
-    Menu.addButton("Fermer","CloseMenu",nil) 
+    Menu.addButton("Fermer","CloseMenu",nil)
 end
 
 function RentrerVehicule()
@@ -49,7 +49,7 @@ function OptionVehicle(vehID)
     MenuTitle = "Options :"
     ClearMenu()
     Menu.addButton("Sortir", "SortirVehicule", vehID)
-	--Menu.addButton("Supprimer", "SupprimerVehicule", vehID)
+	Menu.addButton("Supprimer", "SupprimerVehicule", vehID)
     Menu.addButton("Retour", "ListeVehicule", nil)
 end
 
@@ -59,13 +59,12 @@ function SortirVehicule(vehID)
 	CloseMenu()
 end
 
---[[
+
 function SupprimerVehicule(vehID)
 	local vehID = vehID
-		TriggerServerEvent('garages:CheckForDelVeh', vehID)
+	TriggerServerEvent('garages:CheckForDelVeh', vehID)
     Menu.addButton("Fermer","CloseMenu",nil) 
 end
-]]--
 
 function drawNotification(text)
 	SetNotificationTextEntry("STRING")
