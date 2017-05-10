@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a26634f1-38d9-4685-b6aa-d8760e99e9e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/GUI.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/__resource.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/anims.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/client.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/personnal_menu/server.lua" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/GUI.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/http-files/Garages.rpf" afterPath="$PROJECT_DIR$/cache/http-files/Garages.rpf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/http-files/base.rpf" afterPath="$PROJECT_DIR$/cache/http-files/base.rpf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache/http-files/shops.rpf" afterPath="$PROJECT_DIR$/cache/http-files/shops.rpf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/citmp-server.yml" afterPath="$PROJECT_DIR$/citmp-server.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database-dump.sql" afterPath="$PROJECT_DIR$/database-dump.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/GUI.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/Garages/client.lua" afterPath="$PROJECT_DIR$/resources/[addon]/Garages/client.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/barbers/menu.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/clothes/menu.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/lib/menuClass.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/[addon]/shops/process.lua" afterPath="$PROJECT_DIR$/resources/[addon]/shops/process.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/base/knockout/knockout.lua" afterPath="$PROJECT_DIR$/resources/base/knockout/knockout.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" afterPath="$PROJECT_DIR$/resources/base/spawn/spawnManager.lua" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/GUI.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/__resource.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/dump.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/server.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/[addon]/vdk_inventory/vdkinv.lua" afterPath="" />
     </list>
     <ignored path="cfx-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -279,6 +264,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cfx-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfx-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfx-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfx-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cfx-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="[addon]" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -858,12 +875,12 @@
       <workItem from="1494255936381" duration="6554000" />
       <workItem from="1494284165946" duration="27899000" />
       <workItem from="1494339212058" duration="15081000" />
-      <workItem from="1494414822700" duration="7704000" />
+      <workItem from="1494414822700" duration="7792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372662000" />
+    <option name="totallyTimeSpent" value="372750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1125,13 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/dump.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.310345">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/[addon]/vehshop/vehshop.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.068966">
@@ -1143,13 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="290" column="137" selection-start-line="290" selection-start-column="129" selection-end-line="290" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/GUI.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-46.068966">
-          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1167,31 +1170,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/vdkinv.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/[addon]/Garages/server.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/server.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/[addon]/vdk_inventory/__resource.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
